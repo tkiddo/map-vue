@@ -1,4 +1,4 @@
-# alagis-all
+# Map-vue
 
 > A Vue.js project
 
