@@ -1,0 +1,22 @@
+export default {
+  zoom: state => state.zoom,
+  map: state => state.map,
+  markerLayer: state => state.markerLayer,
+  clickState: state => state.clickState,
+  draw: state => state.draw,
+  drawLayer: state => state.drawLayer,
+  markerFeatures: state => state.markerFeatures,
+  markerIcon: state => state.markerIcon,
+  overlayShow: state => state.overlayShow,
+  overlay: state => state.overlay,
+  displayMarkerLayer: state => state.displayMarkerLayer,
+  formShow:state=>state.formShow,
+  hotFeatureLayer:state=>state.hotFeatureLayer,
+  featuresOverlay:state=>state.featuresOverlay,
+  highLight:state=>state.highLight,
+  featureInfo:state=>state.featureInfo,
+  searchShow:state=>state.searchShow,
+  searchResult:state=>state.searchResult,
+  resultShow:state=>state.resultShow,
+  loading:state=>state.loading
+}
