@@ -112,5 +112,11 @@ export default {
     state
   },payload){
     commit(types.CHANGE_LOADING,payload)
+  },
+  updateNotice({
+    commit,
+    state
+  },payload ='无'){
+    commit(types.UPDATE_NOTICE,payload)
   }
 }

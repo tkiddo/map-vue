@@ -100,6 +100,10 @@ export default {
   //loading
   [types.CHANGE_LOADING](state,payload){
     state.loading = payload
+  },
+  //消息提示板
+  [types.UPDATE_NOTICE](state,payload){
+    state.notice = payload
   }
 
 

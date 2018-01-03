@@ -35,6 +35,7 @@ export default {
           text: "缩放",
           subShow: false,
           operation: "changeZoom",
+          notice:'地图放大缩小',
           children: [
             {
               text: "放大",
@@ -50,6 +51,7 @@ export default {
           text: "画图",
           subShow: false,
           operation: "draw",
+          notice:'选择绘画形状，鼠标点击操作',
           children: [
             {
               text: "点",
@@ -73,6 +75,7 @@ export default {
           text: "animate",
           subShow: false,
           operation: "animate",
+          notice:'地图动态效果，定位切换',
           children: [
             {
               text: "顺时针",
@@ -108,6 +111,7 @@ export default {
           text: "标注",
           operation: "mark",
           subShow: false,
+          notice:'鼠标点击在地图上打点',
           children: [
             {
               text: "显示",
@@ -123,6 +127,7 @@ export default {
           text: "测量",
           subShow: false,
           operation: "measure",
+          notice:'暂未完善',
           children: [
             {
               text: "测距",
@@ -138,6 +143,7 @@ export default {
           text: "热区",
           subShow: false,
           operation: "hotArea",
+          notice:'获取热区和自定义热区',
           children: [
             {
               text: "创建",
@@ -151,15 +157,18 @@ export default {
         },
         {
           text: "清除",
-          operation: "clear"
+          operation: "clear",
+          notice:'清除所有图层'
         },
         {
           text: "热力图",
-          operation: "heatMap"
+          operation: "heatMap",
+          notice:'热力图显示'
         },
         {
           text: "搜索",
-          operation:'search'
+          operation:'search',
+          notice:'搜索，未做判断'
         },
         {
           text: "轮子",
@@ -259,6 +268,7 @@ export default {
         this.subShow = true;
         let subMenu = this.$refs.subMenu;
         subMenu.style.left = x + "px";
+        this.updateNotice(item.notice)
       }
     },
     interAction(operation, type) {
@@ -642,7 +652,8 @@ export default {
       "setHotFeatureLayer",
       "setFeaturesOverlay",
       "changeHighLight",
-      'changeSearchShow'
+      'changeSearchShow',
+      'updateNotice'
     ])
   }
 };

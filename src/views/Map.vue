@@ -5,6 +5,7 @@
       <t-popup></t-popup>
       <t-search></t-search>
       <t-result></t-result>
+      <t-notice></t-notice>
   </div>
 </template>
 
@@ -14,13 +15,15 @@ import tMap from '../components/map.vue'
 import tPopup from '../components/popup.vue'
 import tSearch from '../components/search.vue'
 import tResult from '../components/result.vue'
+import tNotice from '../components/notice.vue'
 export default {
   components:{
       tMenu,
       tMap,
       tPopup,
       tSearch,
-      tResult
+      tResult,
+      tNotice
   },
   mounted(){
     console.log(this.$route)

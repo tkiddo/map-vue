@@ -18,5 +18,6 @@ export default {
   searchShow:state=>state.searchShow,
   searchResult:state=>state.searchResult,
   resultShow:state=>state.resultShow,
-  loading:state=>state.loading
+  loading:state=>state.loading,
+  notice:state=>state.notice
 }

@@ -30,6 +30,7 @@ const state = {
   resultShow:false,
   totalNumber:0,
   loading:false,
+  notice:'操作提示'
 }
 
 export default new Vuex.Store({
